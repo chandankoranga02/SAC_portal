@@ -18,6 +18,13 @@ export default {
           700: '#0369a1',
           800: '#075985',
           900: '#0c4a6e',
+          navy: '#030f27',
+          blue: {
+            DEFAULT: '#00629b',
+            light: '#0084d1',
+            dark: '#00629b',
+            cta: '#00629b',
+          },
         },
       },
       fontFamily: {
