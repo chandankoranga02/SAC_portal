@@ -6,7 +6,7 @@ const galleryImages = [
     category: "Events",
     description:
       "Memorable moments from SAC events and celebrations.",
-    src: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1000&q=80",
+    src: "/images/images/img1.jpg",
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const galleryImages = [
     category: "Campus",
     description:
       "Students connecting and sharing experiences.",
-    src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1000&q=80",
+    src: "/images/images/img2.jpg",
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const galleryImages = [
     category: "Activities",
     description:
       "Collaboration, creativity and student participation.",
-    src: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=80",
+    src: "/images/images/img3.jpg",
   },
   {
     id: 4,
