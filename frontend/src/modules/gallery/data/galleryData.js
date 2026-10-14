@@ -6,7 +6,7 @@ const galleryImages = [
     category: "Events",
     description:
       "Memorable moments from SAC events and celebrations.",
-    src: "/images/images/img1.jpg",
+    src: "/images/images/img1.jpg.jpeg",
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const galleryImages = [
     category: "Campus",
     description:
       "Students connecting and sharing experiences.",
-    src: "/images/images/img2.jpg",
+    src: "/images/images/img2.jpg.jpeg",
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const galleryImages = [
     category: "Activities",
     description:
       "Collaboration, creativity and student participation.",
-    src: "/images/images/img3.jpg",
+    src: "/images/images/img3.jpg.jpeg",
   },
   {
     id: 4,
