@@ -223,4 +223,4 @@ const GalleryPage = () => {
   );
 };
 
-export default GalleryImages;
+export default galleryImages;
