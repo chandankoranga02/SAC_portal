@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, LogIn } from 'lucide-react';
+import { Menu, X, User } from 'lucide-react';
 import { navLinks } from './navLinks';
 
 export default function Header() {
@@ -53,21 +53,19 @@ export default function Header() {
             onClick={() => setMobileMenuOpen(false)}
             className="group flex shrink-0 items-center gap-3 focus:outline-none"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 transition-transform duration-200 group-hover:scale-105 sm:h-12 sm:w-12">
-              <img
-                src="/images/IeeeLogo.webp"
-                alt="SAC Logo"
-                className="h-7 w-7 object-contain sm:h-8 sm:w-8"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-            </div>
+            <img
+              src="/Logo/SacLogo.jpg"
+              alt="SAC GBPIET Logo"
+              className="h-10 w-10 object-contain transition-transform duration-200 group-hover:scale-105 sm:h-12 sm:w-12"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+            />
 
             <div className="leading-tight">
               <div className="text-lg font-black tracking-tight sm:text-xl lg:text-2xl">
-                <span className="text-[#0084d1]">SAC</span>{' '}
-                <span className="text-white">GBPIET</span>
+                <span className="text-white">SAC</span>{' '}
+                <span className="text-white/60">GBPIET</span>
               </div>
               <p className="hidden text-[9px] font-semibold uppercase tracking-[0.25em] text-white/50 sm:block">
                 Student Activity Cell
@@ -104,13 +102,16 @@ export default function Header() {
               RIGHT: LOGIN BUTTON + MOBILE TOGGLE
               ========================= */}
           <div className="flex items-center gap-3">
-            {/* Login Button (Visible on desktop and tablet) */}
+            {/* Login Icon (Visible on desktop and tablet) */}
             <Link
               to="/login"
-              className="hidden sm:inline-flex items-center gap-2 rounded-xl bg-[#00629b] px-4 py-2.5 text-xs font-semibold text-white shadow-[0_0_15px_rgba(0,98,155,0.35)] transition-all hover:bg-[#0084d1] hover:shadow-[0_0_20px_rgba(0,98,155,0.55)] active:scale-95 lg:px-5 lg:text-sm"
+              className="hidden sm:flex flex-col items-center gap-0.5 group"
+              aria-label="Login"
             >
-              <LogIn size={15} />
-              <span>Login</span>
+              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-yellow-400 to-gray-400 shadow-md transition-all duration-200 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-yellow-500/20">
+                <User size={18} className="text-white" strokeWidth={2.5} />
+              </div>
+              <span className="text-[10px] font-semibold text-white/70 transition-colors group-hover:text-white">Login</span>
             </Link>
 
             {/* Mobile/Tablet Menu Button */}
@@ -140,20 +141,17 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center gap-3"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5">
-                  <img
-                    src="/images/IeeeLogo.webp"
-                    alt="SAC Logo"
-                    className="h-7 w-7 object-contain"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                    }}
-                  />
-                </div>
+                <img
+                  src="/Logo/SacLogo.jpg"
+                  alt="SAC GBPIET Logo"
+                  className="h-10 w-10 object-contain sm:h-11 sm:w-11"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
                 <div>
-                  <div className="text-lg font-black tracking-tight">
-                    <span className="text-[#0084d1]">SAC</span>{' '}
-                    <span className="text-white">GBPIET</span>
+                  <div className="text-lg font-black tracking-tight text-white">
+                    <span>SAC</span> <span className="text-white/60">GBPIET</span>
                   </div>
                   <p className="text-[9px] font-semibold uppercase tracking-[0.25em] text-white/50">
                     Student Activity Cell
@@ -199,10 +197,12 @@ export default function Header() {
               <Link
                 to="/login"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#00629b] py-3.5 text-sm font-semibold text-white shadow-[0_0_20px_rgba(0,98,155,0.4)] transition-all hover:bg-[#0084d1] active:scale-95"
+                className="flex w-full items-center justify-center gap-3 rounded-xl bg-white/[0.06] border border-white/10 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white/10 active:scale-95"
               >
-                <LogIn size={18} />
-                <span>Login to SAC Portal</span>
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-yellow-400 to-gray-400 shadow-md">
+                  <User size={16} className="text-white" strokeWidth={2.5} />
+                </div>
+                <span>Login</span>
               </Link>
               <p className="mt-3 text-center text-[10px] uppercase tracking-widest text-white/40">
                 Student Activity Cell • GBPIET

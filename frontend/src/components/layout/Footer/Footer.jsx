@@ -35,20 +35,17 @@ export default function Footer() {
               ========================= */}
           <div className="md:col-span-2 lg:col-span-2">
             <Link to="/" className="inline-flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 sm:h-12 sm:w-12">
-                <img
-                  src="/images/IeeeLogo.webp"
-                  alt="SAC Logo"
-                  className="h-7 w-7 object-contain sm:h-8 sm:w-8"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
-              </div>
+              <img
+                src="/Logo/SacLogo.jpg"
+                alt="SAC GBPIET Logo"
+                className="h-11 w-11 object-contain sm:h-12 sm:w-12"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
               <div>
-                <h2 className="text-xl font-black tracking-tight sm:text-2xl">
-                  <span className="text-[#0084d1]">SAC</span>{' '}
-                  <span className="text-white">GBPIET</span>
+                <h2 className="text-xl font-black tracking-tight sm:text-2xl text-white">
+                  <span>SAC</span> <span className="text-white/60">GBPIET</span>
                 </h2>
                 <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/50">
                   Student Activity Cell
@@ -62,32 +59,32 @@ export default function Footer() {
               and collaborative workshops.
             </p>
 
-            {/* Social Links */}
+            {/* Social Links — brand colors */}
             <div className="mt-6 flex items-center gap-3">
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram"
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 text-white/60 transition-all hover:border-[#0084d1] hover:bg-[#00629b] hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 text-[#E4405F] transition-all hover:border-[#E4405F]/50 hover:bg-[#E4405F]/10 hover:text-[#E4405F]"
               >
-                <FaInstagram size={16} />
+                <FaInstagram size={17} />
               </a>
               <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 text-white/60 transition-all hover:border-[#0084d1] hover:bg-[#00629b] hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 text-[#0A66C2] transition-all hover:border-[#0A66C2]/50 hover:bg-[#0A66C2]/10 hover:text-[#0A66C2]"
               >
-                <FaLinkedinIn size={16} />
+                <FaLinkedinIn size={17} />
               </a>
               <a
                 href="mailto:sac@gbpiet.ac.in"
                 aria-label="Email"
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 text-white/60 transition-all hover:border-[#0084d1] hover:bg-[#00629b] hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 text-[#EA4335] transition-all hover:border-[#EA4335]/50 hover:bg-[#EA4335]/10 hover:text-[#EA4335]"
               >
-                <Mail size={16} />
+                <Mail size={17} />
               </a>
             </div>
           </div>
