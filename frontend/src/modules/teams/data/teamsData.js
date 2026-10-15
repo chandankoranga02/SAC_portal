@@ -1,23 +1,21 @@
-const teamsData = [
-  {
-    id: "team-1",
-    name: "Team Name",
-    description: "Add a short description of this SAC team.",
-    members: [
-      {
-        id: "member-1",
-        name: "Member Name",
-        designation: "Position / Designation",
-        photo: "/images/teams/member-photo.jpg",
-        socialLinks: {
-          linkedin: "",
-          instagram: "",
-          github: "",
-        },
-      },
-    ],
-  },
+const clubNames = [
+  "Management Club",
+  "Devign",
+  "Abhivyakti",
+  "X-Bands",
+  "Literary",
+  "Aperture",
+  "Dhristikon",
+  "E-Cell GBPIET",
+  "UHV",
+  "Rama Community",
 ];
 
-export default teamsData;
+const teamsData = clubNames.map((name, index) => ({
+  id: `club-${index + 1}`,
+  name,
+  description: "",
+  members: [],
+}));
 
+export default teamsData;
