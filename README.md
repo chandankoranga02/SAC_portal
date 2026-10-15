@@ -8,10 +8,10 @@ This repository contains a modular, feature-based architecture with separated **
 
 ```text
 SAC/
-├── frontend/                     # React + Vite + Tailwind CSS + EmailJS
+├── frontend/                    # React + Vite + Tailwind CSS + EmailJS
 │   ├── .env.example              # Environment variables template
 │   ├── tailwind.config.js        # Tailwind CSS v3 configuration
-│   ├── postcss.config.js         # PostCSS configuration
+│   ├── postcss.config.js         # PostCSS Configuration
 │   └── src/
 │       ├── assets/               # Static icons, images, media
 │       ├── components/           # Shared reusable components
