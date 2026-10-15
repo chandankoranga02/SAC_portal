@@ -10,7 +10,7 @@ import RegistrationPage from '@/modules/registration/page';
 import GalleryPage from '@/modules/gallery/page';
 import ContactPage from '@/modules/contactus/page';
 import CertificateForm from '@/components/Certificate';
-import TeamsPage from '@/pages/TeamsPage';
+import TeamsPage from '@/modules/teams/page';
 
 // Utility & Policy Pages
 import ComplainPage from '@/pages/ComplainPage';
