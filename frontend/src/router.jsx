@@ -19,6 +19,8 @@ import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage';
 import TermsPage from '@/pages/TermsPage';
 import LoginPage from '@/pages/LoginPage';
 import NotFoundPage from '@/pages/NotFoundPage';
+import BlogDetailPage from '@/modules/blogs/BlogDetailPage';
+import JoinSacPage from '@/modules/registration/JoinSacPage';
 
 export function AppRouter() {
   return (
@@ -43,6 +45,9 @@ export function AppRouter() {
           <Route path="/feedback" element={<FeedbackPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-conditions" element={<TermsPage />} />
+          <Route path="/blogs/:id" element={<BlogDetailPage />} />
+          <Route path="/join" element={<JoinSacPage />} />
+          <Route path="/join-sac" element={<JoinSacPage />} />
         </Route>
 
         {/* Authentication Routes */}

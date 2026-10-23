@@ -1,4 +1,5 @@
 import React from 'react';
+import BlogListing from './components/BlogListing';
 
 const BlogsPage = () => {
   return (
@@ -10,6 +11,9 @@ const BlogsPage = () => {
         <p className="mx-auto mt-4 max-w-2xl text-base text-white/70 sm:text-lg">
           Latest updates, event recaps, club spotlights, and student stories from GBPIET.
         </p>
+      </div>
+      <div className="mx-auto mt-12 max-w-7xl">
+        <BlogListing />
       </div>
     </div>
   );

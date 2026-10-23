@@ -1,4 +1,5 @@
 import React from 'react';
+import JoinSacForm from './components/JoinSacForm';
 
 const RegistrationPage = () => {
   return (
@@ -11,6 +12,9 @@ const RegistrationPage = () => {
           Join SAC clubs, societies, and councils at GBPIET to participate in campus fests,
           competitions, and leadership committees.
         </p>
+      </div>
+      <div className="mx-auto mt-12 max-w-7xl">
+        <JoinSacForm />
       </div>
     </div>
   );
